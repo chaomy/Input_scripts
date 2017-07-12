@@ -1,0 +1,17 @@
+# Data for an inclusion consists of the following
+# items separated # white space
+#
+#     Inclusion ID:  Unique integer identifying the inclusion regardless
+#                    of its position in the simulation or the domain
+#                    encompassing it.  (Should be sequential values)
+#     Position:      3 values specifying the XYZ coordinates of
+#                    the center of the inclusion
+#     Semi-principal axes: 3 values in units of b
+#     Euler angles:  3 values specifying the three Euler angles. 1st and 3rd in [-180, 180]. 2nd in [0, 180]. 
+#     Strain field:  Strain field for the particle.  Strain field is a
+#                    symetric matrix so only six components are specified
+#                    in the order: S[0][0], S[1][1], S[2][2], S[1][2],
+#                    S[0][2], S[0][1]
+1 -1967.35 917.27 0.00 69.91 134.07 87.00 1.00 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+2 -1847.34 -1637.28 0.00 67.92 265.34 10.50 1.00 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+3 1400.10 1114.04 0.00 31.25 237.19 255.10 1.00 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
