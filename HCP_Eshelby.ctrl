@@ -37,25 +37,23 @@ HCP_LineDrag                   = 5.e-6
 #  only experience effects from inclusions in the 27-cell cube
 #  surrounding the dislocation.
 #
+
 eshelbyfmEnabled = 0
 eshelbyfmMPOrder = 3
 eshelbyfmTaylorOrder = 3
-#
-#
 
 dirname = "tests/HCP_Eshelby_results"
 
-#loadType  =   1  
-#eRate     = 1.0e4 
-#indxErate =   0  
+loadType  =   1  
+eRate     =   1.0e4 
+
 #edotdir = [
 #   0. 
 #   1.
 #   0.
 #   ]
 
-
-inclusionFile = "tests/HCP_Eshelby_inclusions.dat"
+inclusionFile = "prect.dat"
 
 appliedStress = [
 		   0.0 
@@ -114,7 +112,7 @@ rc   = 3.0
 pois = 0.29
 shearModulus =  45e9
 cOVERa 	     =  1.6236
-mobilityLaw =  "HCP_linear_Eshelby"
+mobilityLaw =  "HCP_linear"
 
 #  FMM setup
 
@@ -124,25 +122,25 @@ fmTaylorOrder   = 5
 fmCorrectionTbl = "inputs/fm-ctab.hcp.m2.t5.dat"
 
 # Output files
-fluxfile =   1
-fluxfreq =   100
-fluxdt   =   -1.000000e+00
-fluxtime =   0.000000e+00
+fluxfile =      1
+fluxfreq =      200
+fluxdt   =      -1.000000e+00
+fluxtime =      0.000000e+00
 fluxcounter =   0
 
-savecn =   1
+savecn 	   =   1
 savecnfreq =   1000
 savecndt   =   -1.000000e+00
 savecntime =   0.000000e+00
 savecncounter =   0
 
 saveprop =   1
-savepropfreq =   100
-savepropdt =   -1.000000e+00
+savepropfreq =   200
+savepropdt   =  -1.000000e+00
 saveproptime =   0.000000e+00
 
 writeVisit                =    1
-writeVisitFreq            =   10
+writeVisitFreq            =    200
 writeVisitCounter         =    1
 writeVisitSegments        =    1
 writeVisitNodes           =    1
